@@ -29,7 +29,8 @@
     <input type="text" name="address" id="address" required>
 
     <label for="postal_code">Code postal:</label>
-    <input type="text" name="postal_code" id="postal_code" required pattern="[0-9]{5}" title="Entrez un code postal valide à 5 chiffres">
+    <input type="text" name="postal_code" id="postal_code" required pattern="[0-9]{5}"
+           title="Entrez un code postal valide à 5 chiffres">
 
     <label for="city">Ville:</label>
     <input type="text" name="city" id="city" required>
@@ -41,7 +42,8 @@
     <input type="date" name="date_of_birth" id="date_of_birth" required>
 
     <label for="phone">Téléphone:</label>
-    <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}" title="Entrez un numéro de téléphone valide à 10 chiffres">
+    <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}"
+           title="Entrez un numéro de téléphone valide à 10 chiffres">
 
     <label for="fax">Fax:</label>
     <input type="tel" name="fax" id="fax" pattern="[0-9]{10}" title="Entrez un numéro de fax valide à 10 chiffres">
