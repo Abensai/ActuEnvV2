@@ -1,9 +1,19 @@
 <?php
     require_once 'model/db_config.php';
+    require_once 'model/request.php';
 
-// Lister les fiches
-    $sql = "SELECT * FROM fiches";
-    $entries = $conn->query($sql);
+    function getList() {
+        $conn = dbConnect();
 
-// Fermer la connexion
-$conn->close();
+        // Lister les fiches
+        $sql = getSqlList();
+        $entries = $conn->query($sql);
+
+        // Fermer la connexion
+        $conn->close();
+
+        return $entries;
+    }
+
+
+

@@ -1,6 +1,6 @@
 # ActuEnvV2
 Test Technique Actu Environnement version 2
-#### temps de realisation estimee : 1h30
+#### temps de realisation estimee : 3h30
 
 ```bash
 module "annuaire" très simple, en responsive design 
@@ -22,10 +22,12 @@ sans utilisation de Bootstrap ni de Frameworks et contrôles préférentiels des
 
 ## Structure:
 ```python
-add : Fonction Créer des fiches 
-edit : Fonction Modifier des fiches
-list : Fonction Lister des fiches
+add : Fonction Créer des fiches (controller et vue)
+edit : Fonction Modifier des fiches (controller et vue)
+list : Fonction Lister des fiches (controller et vue)
 assets : Fichiers css et js
 export : Export de la bdd local
-model : Fonction de creation et de communication de la bdd
+model : Fonction de creation et de communication de la bdd 
+(create, config, request, getter)
+service: fonction utiliser par plusieur bundle (add, edit)
 ```

@@ -1,8 +1,3 @@
-<?php
-require_once 'model/db_config.php';
-require_once 'list/controller.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +10,7 @@ require_once 'list/controller.php';
 <div class="container">
     <h1>Liste Des Fiches</h1>
     <?php
-        require 'list/vue.php';
+        require_once 'list/vue.php';
     ?>
     <div class="add"><a href="add/vue.php">Ajouter une nouvelle fiche</a></div>
 </div>

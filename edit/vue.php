@@ -1,4 +1,7 @@
-<?php include 'controller.php'; ?>
+<?php
+require_once 'controller.php';
+require_once '../model/db_config.php';
+require_once '../model/request.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +18,10 @@
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    require_once '../model/db_config.php';
+    $conn =  dbConnect();
 
 // Récupérer les informations de la fiche à partir de l'ID
-    $sql = "SELECT * FROM fiches WHERE id=$id";
+    $sql = getSqlFicheId($id);
     $result = $conn->query($sql);
 
     if ($result->num_rows == 1) {
